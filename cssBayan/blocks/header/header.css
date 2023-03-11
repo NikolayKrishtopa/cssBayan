@@ -4,3 +4,13 @@
   align-items: center;
   border-bottom: 3px solid #4144ec;
 }
+@media (max-width: 1000px) {
+  .header {
+    min-height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    min-height: 100px;
+  }
+}
