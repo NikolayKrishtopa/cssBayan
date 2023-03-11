@@ -1,9 +1,20 @@
 .meme {
+  position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
   border-bottom: 3px solid #4144ec;
   cursor: pointer;
+}
+.meme__click {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
 }
 .meme__heading-row {
   padding: 40px 0;
@@ -18,21 +29,19 @@
   width: 100%;
 }
 .meme__extend-icon-container {
-  position: relative;
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../../images/minusIcon.svg);
+  background-image: url(../../images/plusIcon.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image 0.5s ease;
+  opacity: 0;
 }
 .meme__picture-container {
-  position: relative;
-  /* transform: scale(0); */
   max-height: 0;
   transition: max-height ease 0.5s;
   align-self: center;
@@ -46,6 +55,16 @@
   transform: none;
   max-height: 1500px;
 }
-.meme:hover > .meme__heading-row > .meme__extend-icon-container {
-  background-image: url(../../images/plusIcon.svg);
+.meme:hover .meme__extend-icon-container {
+  background-image: url(../../images/minusIcon.svg);
+}
+.meme__click:checked ~ .meme__picture-container {
+  transform: none;
+  max-height: 1500px;
+}
+.meme__click:checked ~ .meme__heading-row > .meme__extend-icon-container {
+  background-image: url(../../images/minusIcon.svg);
+}
+.meme:active {
+  opacity: 50%;
 }

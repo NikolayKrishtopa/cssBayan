@@ -3,3 +3,6 @@
   display: flex;
   flex-direction: column;
 }
+.memes-list:hover .meme__extend-icon-container {
+  opacity: 1;
+}
