@@ -47,11 +47,12 @@
   align-self: center;
   overflow: hidden;
   max-width: 100%;
+  min-width: 80%;
 }
 .meme__picture {
   padding: 0;
   padding-bottom: 40px;
-  max-width: 100%;
+  width: 100%;
 }
 .meme:hover > .meme__picture-container {
   transform: none;
