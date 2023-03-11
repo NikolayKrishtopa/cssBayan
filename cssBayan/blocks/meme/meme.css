@@ -52,13 +52,10 @@
   padding: 0;
   padding-bottom: 40px;
   max-width: 100%;
-  
 }
 .meme:hover > .meme__picture-container {
   transform: none;
   max-height: 1500px;
-
-  
 }
 .meme:hover .meme__extend-icon-container {
   background-image: url(../../images/minusIcon.svg);
@@ -83,17 +80,18 @@
     height: 24px;
   }
   .meme__heading-row {
-  padding: 30px 0;
-}
-@media (max-width: 600px) {
-  .meme__title {
-    font-size: 1em;
+    padding: 30px 0;
   }
-  .meme__extend-icon-container {
-    width: 16px;
-    height: 16px;
-  }
-  .meme__heading-row {
-    padding: 20px 0;
+  @media (max-width: 600px) {
+    .meme__title {
+      font-size: 1em;
+    }
+    .meme__extend-icon-container {
+      width: 16px;
+      height: 16px;
+    }
+    .meme__heading-row {
+      padding: 20px 0;
+    }
   }
 }
