@@ -1,8 +1,6 @@
 .header {
-  min-height: 150px;
+  min-height: 200px;
   display: flex;
   align-items: center;
-  font-size: 26px;
-  line-height: 32px;
   border-bottom: 3px solid #4144ec;
 }
