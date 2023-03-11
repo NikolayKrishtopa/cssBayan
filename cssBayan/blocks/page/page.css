@@ -1,2 +1,6 @@
 .page {
+  color: #fff;
+  font-family: "Arial", serif;
+  max-width: 1440px;
+  width: 100%;
 }
