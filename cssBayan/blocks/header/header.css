@@ -1,16 +1,16 @@
 .header {
-  min-height: 200px;
+  min-height: 12em;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid #4144ec;
+  border-bottom: 0.2em solid #4144ec;
 }
-@media (max-width: 1000px) {
+@media (max-width: 63em) {
   .header {
-    min-height: 150px;
+    min-height: 10em;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 38em) {
   .header {
-    min-height: 100px;
+    min-height: 6em;
   }
 }
