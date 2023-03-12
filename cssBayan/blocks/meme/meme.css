@@ -10,6 +10,7 @@
 }
 .meme__click {
   width: 100%;
+  cursor: pointer;
 }
 .meme__heading-row {
   padding: 40px 0;
