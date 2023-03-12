@@ -96,3 +96,8 @@
     }
   }
 }
+@media (hover: none) {
+  .meme__extend-icon-container {
+    opacity: 1;
+  }
+}
