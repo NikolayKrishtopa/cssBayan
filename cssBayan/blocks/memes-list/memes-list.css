@@ -6,12 +6,8 @@
 .memes-list:hover .meme__extend-icon-container {
   opacity: 1;
 }
-.memes-list:hover .meme__title {
-  color: #fff;
-}
-
-@media (hover: none) {
+@media (hover: hover) {
   .memes-list:hover .meme__title {
-    color: unset;
+    color: #fff;
   }
 }
