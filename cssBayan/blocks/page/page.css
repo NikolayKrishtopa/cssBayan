@@ -1,0 +1,18 @@
+.page {
+  padding: 0 6em;
+  color: #fff;
+  font-family: "Arial", serif;
+  max-width: 90em;
+  width: 100%;
+}
+
+@media (max-width: 63em) {
+  .page {
+    padding: 0 3.75em;
+  }
+}
+@media (max-width: 38em) {
+  .page {
+    padding: 0 1.25em;
+  }
+}

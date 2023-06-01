@@ -1,0 +1,13 @@
+.memes-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.memes-list:hover .meme__extend-icon-container {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .memes-list:hover .meme__title {
+    color: #fff;
+  }
+}

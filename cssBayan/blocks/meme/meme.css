@@ -1,0 +1,108 @@
+.meme {
+  list-style: none;
+  border-bottom: 0.2em solid #4144ec;
+  cursor: pointer;
+}
+.meme__click-input {
+  display: none;
+}
+.meme__click {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.meme__heading-row {
+  padding: 2.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meme__title {
+  font-size: 2em;
+  color: yellowgreen;
+}
+.meme__extend-icon {
+  width: 100%;
+}
+.meme__extend-icon-container {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../images/plusIcon.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+  opacity: 0;
+}
+.meme__picture-container {
+  max-height: 0;
+  transition: max-height ease 0.5s;
+  align-self: center;
+  overflow: hidden;
+  max-width: 32em;
+  min-width: 30%;
+  align-self: center;
+}
+.meme__picture {
+  padding: 0;
+  padding-bottom: 2.5em;
+  width: 100%;
+  max-width: 100%;
+}
+.meme:hover .meme__picture-container {
+  transform: none;
+  max-height: 100em;
+}
+.meme:hover .meme__extend-icon-container {
+  background-image: url(../../images/minusIcon.svg);
+}
+.meme__click-input:checked ~ .meme__picture-container {
+  transform: none;
+  max-height: 100em;
+}
+.meme__click-input:checked ~ .meme__heading-row > .meme__extend-icon-container {
+  background-image: url(../../images/minusIcon.svg);
+}
+.meme__click-input:checked ~ .meme__heading-row > .meme__title {
+  color: #fff;
+}
+.meme:active {
+  opacity: 70%;
+}
+.meme:active .meme__title {
+  color: yellowgreen;
+}
+
+@media (max-width: 63em) {
+  .meme__title {
+    font-size: 1.5em;
+  }
+  .meme__extend-icon-container {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .meme__heading-row {
+    padding: 2em 0;
+  }
+  @media (max-width: 38em) {
+    .meme__title {
+      font-size: 1em;
+    }
+    .meme__extend-icon-container {
+      width: 1em;
+      height: 1em;
+    }
+    .meme__heading-row {
+      padding: 1.25em 0;
+    }
+  }
+}
+@media (hover: none) {
+  .meme__extend-icon-container {
+    opacity: 1;
+  }
+}
